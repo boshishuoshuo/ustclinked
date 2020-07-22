@@ -1,0 +1,13 @@
+package com.ustclinked.jobseeking;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class JobseekingApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(JobseekingApplication.class, args);
+	}
+
+}
