@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html>
    <head>
    		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <!-- Required meta tags -->
@@ -40,37 +40,21 @@
     </header>
     <main role="main" class="container">
       <div class="row">
-        <div class="col-md-8">
-          <div class="content-section">
-            <form method = "POST">
-              <fieldset class="form-group">
-                <legend class="border-bottom mbf-4">Log In</legend>
-              </fieldset>
-              <div class="form-group">
-                <p>
-                  <th:block th:text=${errorMessage}>
-                    <font color="red">
-                      errorMessage
-                    </font>
-                   </th:block>
-                </p>
-                <div>Username*</div>
-                <input type="text" name="username" />
-                <div>Password*</div>
-                <input type="password" name="password" /> 
-                <div>
-                  <button class="btn btn-outline-info" type="submit">Log In</button>
-                  <small class="text-muted ml-2">
-                    <a href="">Forgot Password?</a>
-                  </small>
-                </div>
-              </div>
-            </form>
-            <div class="border-top pt-3">
-              <small class="text-muted">
-                Need An Account? <a class="ml-2" href="{% url 'register' %}">Sign Up Now</a>
-              </small>
-            </div>
+        <div>
+          <div>
+            <h3>Missions and Goals</h3>
+            <ul>
+                <li>Facilitate the communication among USTC alumni</li>
+                <li>Provide career advice to USTC alumni</li>
+                <li>Unit USTC alumni worldwide</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Rules and Responsibilities</h3>
+            <ul>
+                <li>You must be a alumnus or have direct relationship with a alumnus</li>
+                <li>You must register and login to search for jobs, references or candidates</li>
+            </ul>
           </div>
         </div>
         <div class="col-md-4">
